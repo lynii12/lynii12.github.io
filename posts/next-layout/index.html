@@ -1,0 +1,184 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>next 設定公版頁 | 找個地方復健作文能力</title>
+<meta name=keywords content="next.js,javascript,react">
+<meta name=description content="next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁
+舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面
+cd next-project touch /page/a.js touch /page/b.js const APage = () => { return <div><Nav />A</div> } const BPage = () => { return <div><Nav />B</div> } 兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)
+這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是
+// 移除Nav 元件 const APage = () => { return <div>A</div> } // 移除Nav 元件 const BPage = () => { return <div>B</div> } export default function MyApp(props) { return ( <div> <Nav /> <Component {.">
+<meta name=author content>
+<link rel=canonical href=https://lynii12.github.io/posts/next-layout/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://lynii12.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://lynii12.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://lynii12.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://lynii12.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://lynii12.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.87.0">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="next 設定公版頁">
+<meta property="og:description" content="next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁
+舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面
+cd next-project touch /page/a.js touch /page/b.js const APage = () => { return <div><Nav />A</div> } const BPage = () => { return <div><Nav />B</div> } 兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)
+這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是
+// 移除Nav 元件 const APage = () => { return <div>A</div> } // 移除Nav 元件 const BPage = () => { return <div>B</div> } export default function MyApp(props) { return ( <div> <Nav /> <Component {.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lynii12.github.io/posts/next-layout/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-08-28T10:41:58+08:00">
+<meta property="article:modified_time" content="2021-08-28T10:41:58+08:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="next 設定公版頁">
+<meta name=twitter:description content="next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁
+舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面
+cd next-project touch /page/a.js touch /page/b.js const APage = () => { return <div><Nav />A</div> } const BPage = () => { return <div><Nav />B</div> } 兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)
+這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是
+// 移除Nav 元件 const APage = () => { return <div>A</div> } // 移除Nav 元件 const BPage = () => { return <div>B</div> } export default function MyApp(props) { return ( <div> <Nav /> <Component {.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://lynii12.github.io/posts/"},{"@type":"ListItem","position":2,"name":"next 設定公版頁","item":"https://lynii12.github.io/posts/next-layout/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"next 設定公版頁","name":"next 設定公版頁","description":"next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁\n舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面\ncd next-project touch /page/a.js touch /page/b.js const APage = () =\u0026gt; { return \u0026lt;div\u0026gt;\u0026lt;Nav /\u0026gt;A\u0026lt;/div\u0026gt; } const BPage = () =\u0026gt; { return \u0026lt;div\u0026gt;\u0026lt;Nav /\u0026gt;B\u0026lt;/div\u0026gt; } 兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)\n這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是\n// 移除Nav 元件 const APage = () =\u0026gt; { return \u0026lt;div\u0026gt;A\u0026lt;/div\u0026gt; } // 移除Nav 元件 const BPage = () =\u0026gt; { return \u0026lt;div\u0026gt;B\u0026lt;/div\u0026gt; } export default function MyApp(props) { return ( \u0026lt;div\u0026gt; \u0026lt;Nav /\u0026gt; \u0026lt;Component {.","keywords":["next.js","javascript","react"],"articleBody":"next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁\n舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面\ncd next-project touch /page/a.js touch /page/b.js const APage = () = { return divNav /A/div } const BPage = () = { return divNav /B/div } 兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)\n這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是\n// 移除Nav 元件 const APage = () = { return divA/div } // 移除Nav 元件 const BPage = () = { return divB/div } export default function MyApp(props) { return ( div Nav / Component {...pageProps} / /div ); } 現在就能達到切換 a 和 b 頁面，卻不重新render Nav 元件想要的效果了\n繼續延伸，當有巢狀的公版頁情形，舉例來說網路商城有 navbar 和footer 的公版頁，點進商品類別頁除了 navbar 和 footer 以外還有加上 sidebar 顯示類別，像是上述情形該如何設定\n可以透過建立\n# 含 navbar 和 footer touch /components/layout.js # 含 navbar\u0008 footer 和 sidebar touch /components/layout-sidebar.js 使用公版的 a 頁面\nconst APage = () = { return divA/div } export default APage; APage.Layout = Layout; 使用公版的 b 頁面\nconst BPage = () = { return divB/div } export default BPage; BPage.Layout = LayoutSidebar; _app.js\nexport default function MyApp(props) { const { Component, pageProps } = props; const Layout = Component.Layout || ((myAppProps) = {myAppProps.children}/); return ( Layout Component {...pageProps} / /Layout ); } ","wordCount":"192","inLanguage":"en","datePublished":"2021-08-28T10:41:58+08:00","dateModified":"2021-08-28T10:41:58+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://lynii12.github.io/posts/next-layout/"},"publisher":{"@type":"Organization","name":"找個地方復健作文能力","logo":{"@type":"ImageObject","url":"https://lynii12.github.io/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://lynii12.github.io/ accesskey=h title="找個地方復健作文能力 (Alt + H)">找個地方復健作文能力</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://lynii12.github.io/search title="search (Alt + /)" accesskey=/>
+<span>search</span>
+</a>
+</li>
+<li>
+<a href=https://lynii12.github.io/posts/ title=posts>
+<span>posts</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://lynii12.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://lynii12.github.io/posts/>Posts</a></div>
+<h1 class=post-title>
+next 設定公版頁
+</h1>
+<div class=post-meta><span title="2021-08-28 10:41:58 +0800 CST">August 28, 2021</span>
+</div>
+</header>
+<div class=post-content>
+<p>next 是hydration ssr 的框架，導轉頁面時會重新做hydration，當不同頁面有共同元件，不想要導轉時重新render 時，可以運用next 定義_app.js 的設定公版頁</p>
+<p>舉例專案現在有兩個頁面，一個 a 頁面，一個 b 頁面</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>cd next-project
+
+touch /page/a.js
+touch /page/b.js
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript>
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>APage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;&lt;</span><span style=color:#a6e22e>Nav</span> <span style=color:#f92672>/&gt;</span><span style=color:#a6e22e>A</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>BPage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;&lt;</span><span style=color:#a6e22e>Nav</span> <span style=color:#f92672>/&gt;</span><span style=color:#a6e22e>B</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+</code></pre></div><p>兩個頁面都需要顯示 Nav ，透過連結跳轉頁面時會發現Nav 都會閃一下重新載入，這和想像中的行為不同，預期希望只異動頁面內容(顯示 A 或是 B)</p>
+<p>這種情形可以用 next 提供的 _app.js ，可以透過這個檔案作全域的設定，像是匯入全域的css 檔案，store provider 等，而公版頁也可以在這裡設定，像是</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>// 移除Nav 元件
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>APage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>A</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+<span style=color:#75715e>// 移除Nav 元件
+</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>BPage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>B</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>MyApp</span>(<span style=color:#a6e22e>props</span>) {
+  <span style=color:#66d9ef>return</span> (
+    <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span>
+      <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>Nav</span> <span style=color:#f92672>/&gt;</span>
+      <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>Component</span> {...<span style=color:#a6e22e>pageProps</span>} <span style=color:#f92672>/&gt;</span>
+    <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+  );
+}
+
+</code></pre></div><p>現在就能達到切換 a 和 b 頁面，卻不重新render Nav 元件想要的效果了</p>
+<p>繼續延伸，當有巢狀的公版頁情形，舉例來說網路商城有 navbar 和footer 的公版頁，點進商品類別頁除了 navbar 和 footer 以外還有加上 sidebar 顯示類別，像是上述情形該如何設定</p>
+<p>可以透過建立</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e># 含 navbar 和 footer</span>
+touch /components/layout.js
+<span style=color:#75715e># 含 navbar footer 和 sidebar</span>
+touch /components/layout-sidebar.js
+</code></pre></div><p>使用公版的 a 頁面</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript>
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>APage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>A</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>APage</span>;
+<span style=color:#a6e22e>APage</span>.<span style=color:#a6e22e>Layout</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Layout</span>;
+</code></pre></div><p>使用公版的 b 頁面</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript>
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>BPage</span> <span style=color:#f92672>=</span> () =&gt; {
+  <span style=color:#66d9ef>return</span> <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span><span style=color:#f92672>&gt;</span><span style=color:#a6e22e>B</span><span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+}
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#a6e22e>BPage</span>;
+<span style=color:#a6e22e>BPage</span>.<span style=color:#a6e22e>Layout</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>LayoutSidebar</span>;
+</code></pre></div><p>_app.js</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>export</span> <span style=color:#66d9ef>default</span> <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>MyApp</span>(<span style=color:#a6e22e>props</span>) {
+  <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>Component</span>, <span style=color:#a6e22e>pageProps</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>props</span>;
+  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Layout</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>Component</span>.<span style=color:#a6e22e>Layout</span> <span style=color:#f92672>||</span> ((<span style=color:#a6e22e>myAppProps</span>) =&gt; <span style=color:#f92672>&lt;&gt;</span>{<span style=color:#a6e22e>myAppProps</span>.<span style=color:#a6e22e>children</span>}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/&gt;);</span>
+
+  <span style=color:#66d9ef>return</span> (
+    <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>Layout</span><span style=color:#f92672>&gt;</span>
+      <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>Component</span> {...<span style=color:#a6e22e>pageProps</span>} <span style=color:#f92672>/&gt;</span>
+    <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/Layout&gt;</span>
+  );
+}
+
+</code></pre></div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://lynii12.github.io/tags/next.js/>next.js</a></li>
+<li><a href=https://lynii12.github.io/tags/javascript/>javascript</a></li>
+<li><a href=https://lynii12.github.io/tags/react/>react</a></li>
+</ul>
+</footer><div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//namingissuealways.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2022 <a href=https://lynii12.github.io/>找個地方復健作文能力</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>

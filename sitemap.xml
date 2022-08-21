@@ -2,17 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lynii12.github.io/post/my-first-post/</loc>
-    <lastmod>2021-08-26T23:50:10+08:00</lastmod>
+    <loc>https://lynii12.github.io/posts/functional-programming/</loc>
+    <lastmod>2022-02-05T15:26:15+08:00</lastmod>
   </url><url>
-    <loc>https://lynii12.github.io/post/</loc>
-    <lastmod>2021-08-26T23:50:10+08:00</lastmod>
+    <loc>https://lynii12.github.io/posts/</loc>
+    <lastmod>2022-02-05T15:26:15+08:00</lastmod>
   </url><url>
     <loc>https://lynii12.github.io/</loc>
+    <lastmod>2022-02-05T15:26:15+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/posts/multiple-url-parameter/</loc>
+    <lastmod>2022-01-26T09:09:00+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/tags/javascript/</loc>
+    <lastmod>2021-08-28T10:41:58+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/posts/next-layout/</loc>
+    <lastmod>2021-08-28T10:41:58+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/tags/next.js/</loc>
+    <lastmod>2021-08-28T10:41:58+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/tags/react/</loc>
+    <lastmod>2021-08-28T10:41:58+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/tags/</loc>
+    <lastmod>2021-08-28T10:41:58+08:00</lastmod>
+  </url><url>
+    <loc>https://lynii12.github.io/posts/my-first-post/</loc>
     <lastmod>2021-08-26T23:50:10+08:00</lastmod>
   </url><url>
     <loc>https://lynii12.github.io/categories/</loc>
   </url><url>
-    <loc>https://lynii12.github.io/tags/</loc>
+    <loc>https://lynii12.github.io/search/</loc>
   </url>
 </urlset>

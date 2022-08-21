@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 哩ㄌ21211</title>
+    <title>Tags on 找個地方復健作文能力</title>
     <link>https://lynii12.github.io/tags/</link>
-    <description>Recent content in Tags on 哩ㄌ21211</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://lynii12.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Tags on 找個地方復健作文能力</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 28 Aug 2021 10:41:58 +0800</lastBuildDate><atom:link href="https://lynii12.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javascript</title>
+      <link>https://lynii12.github.io/tags/javascript/</link>
+      <pubDate>Sat, 28 Aug 2021 10:41:58 +0800</pubDate>
+      
+      <guid>https://lynii12.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>next.js</title>
+      <link>https://lynii12.github.io/tags/next.js/</link>
+      <pubDate>Sat, 28 Aug 2021 10:41:58 +0800</pubDate>
+      
+      <guid>https://lynii12.github.io/tags/next.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>https://lynii12.github.io/tags/react/</link>
+      <pubDate>Sat, 28 Aug 2021 10:41:58 +0800</pubDate>
+      
+      <guid>https://lynii12.github.io/tags/react/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
